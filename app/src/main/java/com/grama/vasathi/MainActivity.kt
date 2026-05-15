@@ -12,7 +12,9 @@ import androidx.navigation.compose.rememberNavController
 import com.grama.vasathi.ui.NavGraph
 import com.grama.vasathi.ui.Screen
 import com.grama.vasathi.ui.theme.GramaVasathiTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
