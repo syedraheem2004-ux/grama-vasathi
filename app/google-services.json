@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "927114291895",
+    "firebase_url": "https://grameen-vasathi-default-rtdb.firebaseio.com",
+    "project_id": "grameen-vasathi",
+    "storage_bucket": "grameen-vasathi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927114291895:android:d3ae1cb88318e7019afb32",
+        "android_client_info": {
+          "package_name": "com.grama.vasathi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjeU6kdwVQw81aIOfpnhBygbHOWhhchgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
