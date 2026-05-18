@@ -56,8 +56,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
     
-    // Room
-    val room_version = "2.6.1"
+    // Room - Updated to 2.7.0-alpha11 to fix Kotlin 2.0 compatibility
+    val room_version = "2.7.0-alpha11"
     implementation("androidx.room:room-runtime:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
     ksp("androidx.room:room-compiler:$room_version")

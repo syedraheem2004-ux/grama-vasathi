@@ -9,8 +9,8 @@ interface StayDao {
     fun getAllStays(): Flow<List<StayEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(stays: List<StayEntity>)
+    suspend fun insertAll(stays: List<StayEntity>): List<Long>
 
     @Query("DELETE FROM stays")
-    fun clearAll()
+    suspend fun clearAll(): Int
 }

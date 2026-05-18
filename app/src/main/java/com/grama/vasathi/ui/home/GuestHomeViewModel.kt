@@ -92,8 +92,17 @@ class GuestHomeViewModel(application: Application) : AndroidViewModel(applicatio
             RecentlyViewedModel("3", "Savitha's Farm", "Belur", 950, "", "1 hr ago")
         )
 
-        // Sample Upcoming Booking
-        _upcomingBooking.value = BookingModel("b1", "1", "g1", "2026-06-15", "2026-06-18", 2, 3600, "CONFIRMED")
+        // Sample Upcoming Booking - Fixed parameter mapping
+        _upcomingBooking.value = BookingModel(
+            bookingId = "b1",
+            stayId = "1",
+            guestId = "g1",
+            checkIn = "2026-06-15",
+            checkOut = "2026-06-18",
+            guestCount = 2,
+            totalPrice = 3600,
+            status = "CONFIRMED"
+        )
     }
 
     fun getRecommendations(guestId: String = "") {

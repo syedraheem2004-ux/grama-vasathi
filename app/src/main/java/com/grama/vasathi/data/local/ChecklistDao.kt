@@ -9,8 +9,8 @@ interface ChecklistDao {
     fun getAllItems(): Flow<List<ChecklistItemEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertItems(items: List<ChecklistItemEntity>)
+    suspend fun insertItems(items: List<ChecklistItemEntity>): List<Long>
 
     @Query("UPDATE checklist_items SET isChecked = :isChecked WHERE itemId = :itemId")
-    fun updateItemStatus(itemId: String, isChecked: Boolean)
+    suspend fun updateItemStatus(itemId: String, isChecked: Boolean): Int
 }

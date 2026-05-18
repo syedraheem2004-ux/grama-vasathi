@@ -9,7 +9,7 @@ interface BookingDao {
     fun getAllBookings(): Flow<List<BookingEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertBooking(booking: BookingEntity)
+    suspend fun insertBooking(booking: BookingEntity): Long
 
     @Query("SELECT * FROM bookings WHERE bookingId = :id")
     fun getBookingById(id: String): Flow<BookingEntity?>
