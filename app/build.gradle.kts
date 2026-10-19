@@ -56,7 +56,7 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
     
-    // Room - Updated to 2.7.0-alpha11 to fix Kotlin 2.0 compatibility
+    // Room - Using 2.7.0-alpha11 for Kotlin 2.0 compatibility
     val room_version = "2.7.0-alpha11"
     implementation("androidx.room:room-runtime:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
@@ -68,9 +68,9 @@ dependencies {
     // Image Loading
     implementation("io.coil-kt:coil-compose:2.6.0")
 
-    // Hilt
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    ksp("com.google.dagger:hilt-android-compiler:2.51.1")
+    // Hilt - Updated to 2.59.2
+    implementation("com.google.dagger:hilt-android:2.59.2")
+    ksp("com.google.dagger:hilt-android-compiler:2.59.2")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     // Charting (Vico)
